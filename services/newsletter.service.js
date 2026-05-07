@@ -3,22 +3,24 @@ const mailer = require("../utils/mailer");
 
 class NewsletterService {
   async subscribe(email) {
-    const existing = await Newsletter.findOne({ email });
+    const normalizedEmail = email.toLowerCase().trim();
+
+    const existing = await Newsletter.findOne({ email: normalizedEmail });
 
     if (existing) {
       return { status: "exists", data: existing };
     }
 
-    const user = await Newsletter.create({ email });
+    const user = await Newsletter.create({
+      email: normalizedEmail,
+    });
 
-    // 📧 SEND WELCOME EMAIL
     await mailer.sendMail({
-      to: email,
-      subject: "Welcome to KNN Newsletter 🎉",
+      to: normalizedEmail,
+      subject: "Welcome to KDNGroup LLC Team Newsletter 🎉",
       html: `
         <h2>Welcome 🎉</h2>
-        <p>You have successfully subscribed to our newsletter.</p>
-        <p>We will send you updates and news.</p>
+        <p>You have successfully subscribed.</p>
       `,
     });
 
