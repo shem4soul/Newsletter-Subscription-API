@@ -20,7 +20,7 @@ class NewsletterService {
       subject: "Welcome to KDNGroup LLC Team Newsletter 🎉",
       html: `
         <h2>Welcome 🎉</h2>
-        <p>You have successfully subscribed.</p>
+        <p>Subscription successful. You will now receive our latest news, updates, and exclusive content via email.</p>
       `,
     });
 
