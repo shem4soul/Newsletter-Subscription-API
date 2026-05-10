@@ -21,7 +21,7 @@ exports.subscribe = async (req, res) => {
       return res.status(201).json({
         success: true,
         message:
-          "Greetings to you from KDNGroup LLC Team, Thank you for subscribing. You will now receive timely updates, important announcements, and curated content directly in your inbox..",
+          "Greetings to you from KDN Group Team, Thank you for subscribing. You will now receive timely updates, important announcements, and curated content directly in your inbox..",
         data: result.data,
       });
     }

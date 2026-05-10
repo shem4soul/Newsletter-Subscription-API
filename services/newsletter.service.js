@@ -19,7 +19,7 @@ class NewsletterService {
     // 📧 Welcome Email
     await mailer.sendMail({
       to: email,
-      subject: "Welcome to KNN Newsletter 🎉",
+      subject: "Welcome to KDN Group Newsletter 🎉",
       html: `
         <div style="font-family: Arial, sans-serif;">
           <h2>Welcome 🎉</h2>
