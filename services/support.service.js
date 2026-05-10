@@ -13,7 +13,7 @@ class SupportService {
       return {
         status: "exists",
         message:
-          "This inquiry has already been submitted to KDNG Group. Our support team will get back to you shortly..",
+          "This inquiry has already been submitted to KDN Group. Our support team will get back to you shortly..",
         data: existingInquiry,
       };
     }
