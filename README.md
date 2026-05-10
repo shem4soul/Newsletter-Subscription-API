@@ -1,4 +1,4 @@
-📧 KDNG Group Newsletter & Support API
+📧 KDN Group Newsletter & Support API
 
 A scalable backend API built with Node.js, Express, MongoDB, Joi, and Nodemailer following strict MVC architecture.
 
