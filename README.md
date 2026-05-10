@@ -1,5 +1,11 @@
 📧 KDN Group Newsletter & Support API
 
+## API Documentation
+
+Swagger documentation is available at:
+
+http://localhost:5000/api-docs
+
 A scalable backend API built with Node.js, Express, MongoDB, Joi, and Nodemailer following strict MVC architecture.
 
 This project provides endpoints for:
