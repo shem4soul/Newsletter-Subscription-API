@@ -4,7 +4,7 @@
 
 Swagger documentation is available at:
 
-http://localhost:5000/api-docs
+http://localhost:8000/api-docs
 
 A scalable backend API built with Node.js, Express, MongoDB, Joi, and Nodemailer following strict MVC architecture.
 
